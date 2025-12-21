@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>My Portfolio</title>
+    <title>SCTS Portfolio</title>
 </head>
 <body id="home">
     <nav class="navbar">
@@ -34,32 +34,37 @@
 
         <div class="card">
             <img src="images/chess.jpg"  alt="chesslogo">
-            <h4 style="text-align: center;">CheckMate! | Chess Game</h4>
-            <p>A 2D strategy game clone of the classic game, Chess. This game follows the same rules and same mechanics of the chess game. You can play this by yourself and with an opponent whether a friend or anyone to practice your decision making and strategic skills.</p>
+                <h4 style="text-align: center;">CheckMate! | Chess Game</h4>
+                    <p>A 2D strategy game clone of the classic game, Chess. This game follows the same rules and same mechanics of the chess game. You can play this by yourself and with an opponent whether a friend or anyone to practice your decision making and strategic skills.</p>
         </div>
         <div class="card">
             <img src="images/soundry.jpg"  alt="soundry">
-            <h4 style="text-align: center;">Soundry | Music Library</h4>
-            <p>An application that stores multiple music into one place. The application will provide users a much convenient and comfortable experience by allowing them to organize their downloaded music and play different music formats.</p>
+                <h4 style="text-align: center;">Soundry | Music Library</h4>
+                    <p>An application that stores multiple music into one place. The application will provide users a much convenient and comfortable experience by allowing them to organize their downloaded music and play different music formats.</p>
         </div>
         <div class="card">
             <img src="images/event.png"  alt="event">
-            <h4 style="text-align: center;">EventHorizon | Event Website</h4>
-            <p>A website that showcases events from the university. This will provide much needed information about some of the events that the university had or will have. It will provide this through the descriptions in the event page and various pictures taken throughout the event.</p>
+                <h4 style="text-align: center;">EventHorizon | Event Website</h4>
+                    <p>A website that showcases events from the university. This will provide much needed information about some of the events that the university had or will have. It will provide this through the descriptions in the event page and various pictures taken throughout the event.</p>
         </div>
     </main>
 
-    <footer id="contact" class="footer">
-        <b><p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">&copy; 2024 SCTS. All Rights Reserved.</p></b>
-        <p>
-            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-            <a href="https://github.com/sctsandino" class="fa fa-github"></a>
-            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
-        </p>
+    <footer id="contact" class="footer bg-dark text-white py-3 text-center">
+        <p>&copy; <span id="current-year"></span> SCTS. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://github.com/sctsandino" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+        </div>
     </footer>
+    
 </body>
 
 <script>
+    if (document.getElementById('current-year')) {
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    }
+    
     document.querySelectorAll('.navbar-menu a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
