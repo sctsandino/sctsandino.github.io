@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styelsheets\portfolio1.css">
+    <link rel="stylesheet" href="styelsheets/portfolio1.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>SCTS Portfolio</title>
 </head>
+
 <body id="home">
+
     <nav class="navbar">
-        <div class="navbar-brand"><a href="#home">SCTS</a></div>
+        <div class="navbar-brand">
+            <a href="#home">SCTS</a>
+        </div>
         <ul class="navbar-menu">
-            <li><a href="home">Home</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header id="about" class="header">
         <div class="header-content">
-            <img src="images\Student_Photo.jpg" alt="Shierwin Photo" class="profile-pic">
+            <img src="images/Student_Photo.jpg" alt="Shierwin Photo" class="profile-pic">
             <h2>Welcome!</h2>
-            <p>I am <b style="color: #192947;">Shierwin Carl Tiong Sandino</b>, an Information Technology student currently studying at PHINMA-University of Pangasinan. I am eager to enhance my programming skills and knowledge. Committed to continuous improvement, I strive to prepare for a dynamic, growth-oriented IT landscape.</p>
+            <p>
+                I am <b style="color: #192947;">Shierwin Carl Tiong Sandino</b>,
+                an Information Technology student currently studying at
+                PHINMA-University of Pangasinan. I am eager to enhance my
+                programming skills and knowledge. Committed to continuous
+                improvement, I strive to prepare for a dynamic,
+                growth-oriented IT landscape.
+            </p>
         </div>
     </header>
 
@@ -33,19 +47,44 @@
         <h2>PROJECTS</h2>
 
         <div class="card">
-            <img src="images/chess.jpg"  alt="chesslogo">
-                <h4 style="text-align: center;">CheckMate! | Chess Game</h4>
-                    <p>A 2D strategy game clone of the classic game, Chess. This game follows the same rules and same mechanics of the chess game. You can play this by yourself and with an opponent whether a friend or anyone to practice your decision making and strategic skills.</p>
+            <img src="images/chess.jpg" alt="Chess logo">
+            <h4 class="text-center">CheckMate! | Chess Game</h4>
+            <p>
+                A 2D strategy game clone of the classic Chess game.
+                Play solo or with an opponent to improve strategic
+                thinking and decision-making skills.
+            </p>
+            <a href="projects/chess.html" class="card-action">
+                <span class="arrow">Learn More</span>
+                <span class="arrow">→</span>
+            </a>
         </div>
+
         <div class="card">
-            <img src="images/soundry.jpg"  alt="soundry">
-                <h4 style="text-align: center;">Soundry | Music Library</h4>
-                    <p>An application that stores multiple music into one place. The application will provide users a much convenient and comfortable experience by allowing them to organize their downloaded music and play different music formats.</p>
+            <img src="images/soundry.jpg" alt="Soundry">
+            <h4 class="text-center">Soundry | Music Library</h4>
+            <p>
+                An application that organizes downloaded music in one
+                place, supporting multiple formats for a convenient
+                listening experience.
+            </p>
+            <a href="#" class="card-action">
+                <span class="arrow">Learn More</span>
+                <span class="arrow">→</span>
+            </a>
         </div>
+
         <div class="card">
-            <img src="images/event.png"  alt="event">
-                <h4 style="text-align: center;">EventHorizon | Event Website</h4>
-                    <p>A website that showcases events from the university. This will provide much needed information about some of the events that the university had or will have. It will provide this through the descriptions in the event page and various pictures taken throughout the event.</p>
+            <img src="images/event.png" alt="Event">
+            <h4 class="text-center">EventHorizon | Event Website</h4>
+            <p>
+                A university event showcase website providing descriptions
+                and photos of past and upcoming events.
+            </p>
+            <a href="#" class="card-action">
+                <span class="arrow">Learn More</span>
+                <span class="arrow">→</span>
+            </a>
         </div>
     </main>
 
@@ -57,22 +96,17 @@
             <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
         </div>
     </footer>
-    
-</body>
 
-<script>
-    if (document.getElementById('current-year')) {
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    }
-    
-    document.querySelectorAll('.navbar-menu a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+    <script>
+        document.getElementById('current-year').textContent =
+            new Date().getFullYear();
+
+        document.querySelectorAll('.navbar-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth'});
             });
         });
-    });
-</script>
+    </script>
 
+</body>
 </html>

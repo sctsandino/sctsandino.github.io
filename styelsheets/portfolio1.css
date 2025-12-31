@@ -18,15 +18,15 @@ body {
 
 .header {
     width: 92%;
-    min-height: 100vh;
+    min-height: 85vh;               /* was 100vh */
     background: linear-gradient(135deg, #e9f1fb 0%, #d4d4d4 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
-    margin: 70px auto 0 auto;
+    padding: 30px 20px;             /* add vertical padding */
+    margin: 50px auto 0 auto;       /* was 70px */
     box-sizing: border-box;
 }
 
@@ -265,4 +265,34 @@ main > h2 {
     main .card {
         grid-column: 3 / span 8;
     }
+}
+
+.card-action {
+    text-decoration: none;
+    margin-top: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #192947;
+    transition: all 0.3s ease;
+}
+
+.card-action .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+main .card:hover .card-action {
+    color: #ffffff;
+    transition: transform 0.3s ease
+}
+
+main .card:hover .card-action .arrow {
+    transform: translateX(6px);
+    transition: transform 0.3s ease
 }

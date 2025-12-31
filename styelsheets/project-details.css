@@ -1,0 +1,115 @@
+main {
+    width: 92%;
+    margin: 100px auto 60px auto; /* same as main page container */
+    padding: 2rem;
+    background-color: #e9f1fb;     /* same background as portfolio main */
+    border-radius: 12px;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.project-details {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f7fb;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-details h1 {
+    color: #192947;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-details img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-meta p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.project-description h3 {
+    margin-top: 25px;
+    color: #192947;
+}
+
+.project-description p,
+.project-description ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-description ul {
+    padding-left: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #192947;
+    transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+.project-details h1 {
+    scroll-margin-top: 80px; /* same height as navbar */
+}
+
+.project-top {
+    display: flex;
+    flex-wrap: wrap; /* allow stacking on small screens */
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.project-image {
+    flex: 0 0 40%; /* image takes 40% width */
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-meta {
+    flex: 1; /* take remaining width */
+}
+
+.project-meta p,
+.project-meta ul {
+    margin: 5px 0;
+}
+
+.project-meta ul {
+    padding-left: 20px;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+    .project-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        flex: 0 0 auto;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .project-meta {
+        text-align: center;
+    }
+}

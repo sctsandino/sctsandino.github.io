@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styelsheets/portfolio1.css">
+    <link rel="stylesheet" href="../styelsheets/project-details.css">
+
+    <title>CheckMate! | Project Details</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../index.html">SCTS</a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="project-details">
+
+            <h1>CheckMate! | Chess Game</h1>
+        
+            <div class="project-top">
+                <img src="../images/chess.jpg" alt="Chess Project" class="project-image">
+        
+                <div class="project-meta">
+                    <p><strong>Year Developed:</strong> 2024</p>
+                    <p><strong>Developers:</strong>
+                        <ul>
+                            <li>Ignacio, Rea E.</li>
+                            <li>Reyes, Louis Armando</li>
+                            <li>Sandino, Shierwin Carl T.</li>
+                            <li>Vidal, R-Mia M.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Tech Stack:</strong> Python, Pygame, VS Code</p>
+                </div>
+            </div>
+        
+            <div class="project-description">
+                <h3>Project Overview</h3>
+                <p>CheckMate! is a 2D strategy-based chess game that faithfully
+                    replicates the official rules and mechanics of traditional chess.
+                    The game allows both single-player and local multiplayer modes,
+                    helping users sharpen their strategic thinking and decision-making
+                    skills.</p>
+        
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Full chess rule implementation</li>
+                    <li>Single-player and local multiplayer</li>
+                    <li>Turn-based logic and move validation</li>
+                    <li>Clean and minimal UI</li>
+                </ul>
+            </div>
+        
+            <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer bg-dark text-white py-3 text-center">
+        <p>&copy; <span id="current-year"></span> SCTS. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://github.com/sctsandino" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent =
+            new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
